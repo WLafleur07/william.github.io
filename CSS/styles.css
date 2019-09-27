@@ -1,13 +1,22 @@
 body {
-  background-color: #23374d;
+  background-color: #badfdb;
 }
 
 hr {
-  height: 3px; background-color: #e5e5e5;
+  height: 3px; background-color: #347474;
 }
 table {
-  background-color: #1089ff;
+  background-color: #f8a978;
 }
 h1 {
-  background-color: #eeeeee;
+  color: #f8a978; background-color: #fcf9ea; width: 20%;
+}
+h2 {
+  color: #f8a978; background-color: #fcf9ea; width: 15%;
+}
+h3 {
+  color: #f8a978; background-color: #fcf9ea; width: 15%;
+}
+h4 {
+  color: #f8a978; background-color: #fcf9ea; width: 15%;
 }

@@ -1,22 +1,39 @@
 body {
+
   background-color: #badfdb;
 }
 
 hr {
-  height: 3px; background-color: #347474;
+  height: 0px;
+  width: 5%;
+  border-color: #f8a978;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+
+
+
 }
 table {
   background-color: #f8a978;
 }
 h1 {
-  color: #f8a978; background-color: #fcf9ea; width: 50%;
+  color: #f8a978;
+  background-color: #347474;
+  width: 50%;
 }
 h2 {
-  color: #f8a978; background-color: #fcf9ea; width: 15%;
+  color: #f8a978;
+  background-color: #347474;
+  width: 15%;
 }
 h3 {
-  color: #f8a978; background-color: #fcf9ea; width: 15%;
+  color: #f8a978;
+  background-color: #347474;
+  width: 15%;
 }
 h4 {
-  color: #f8a978; background-color: #fcf9ea; width: 15%;
+  color: #f8a978;
+  background-color: #347474;
+  width: 15%;
 }

@@ -37,3 +37,20 @@ h4 {
 .me {
   background-color: #347474;
 }
+
+.OtherPages {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+
+  position: relative;
+  left: 15px;
+}
+
+.navBar {
+  background-color: #f8a978;
+  position: fixed;
+  top: 10px;
+  right: 100px;
+
+}

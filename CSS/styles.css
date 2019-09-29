@@ -1,7 +1,7 @@
 /*******************************************************Tag Selectors*****************************************************/
-
 body {
   background-color: #badfdb;
+  text-align: center;
 }
 
 hr {
@@ -14,7 +14,12 @@ hr {
 }
 
 table {
+  margin: 0 auto 0 auto;
   background-color: #f8a978;
+}
+
+ol {
+  margin: 0 auto 0 auto;
 }
 
 h1 {
@@ -38,11 +43,20 @@ h4 {
   background-color: #347474;
 }
 
+.uoList {
+  width: 200px;
+  margin: 0 auto 0 auto;
+}
+
+.oList {
+  width: 200px;
+  margin: 0 auto 0 auto;
+}
+
 .OtherPages {
   margin-top: 0;
   margin-bottom: 0;
   color: black;
-
   position: relative;
   left: 15px;
 }
@@ -52,5 +66,4 @@ h4 {
   position: fixed;
   top: 10px;
   right: 100px;
-
 }

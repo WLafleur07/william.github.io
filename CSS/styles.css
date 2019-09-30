@@ -2,6 +2,7 @@
 body {
   background-color: #badfdb;
   text-align: center;
+  font-family: 'Slabo 27px', serif;
 }
 
 hr {
@@ -24,18 +25,22 @@ ol {
 
 h1 {
   color: #347474;
+  font-family: 'Squada One', cursive;
 }
 
 h2 {
   color: #347474;
+  font-family: 'Squada One', cursive;
 }
 
 h3 {
   color: #347474;
+  font-family: 'Squada One', cursive;
 }
 
 h4 {
   color: #347474;
+  font-family: 'Squada One', cursive;
 }
 
 /*******************************************************Class Selectors*****************************************************/
@@ -54,11 +59,10 @@ h4 {
 }
 
 .OtherPages {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: black;
+  color: #347474;
+  margin: 0 auto;
   position: relative;
-  left: 15px;
+
 }
 
 .navBar {

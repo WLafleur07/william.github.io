@@ -9,46 +9,62 @@
 </head>
 
 <body>
+  <canvas id="myCanvas" width="1000" height="500" style="border: 1px solid"></canvas>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(1000, 500);
+    ctx.stroke();
+  </script>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+  </script>
+
+  <br><br><br><br><br>
   <h2>Contact Info</h2>
   <a href="index.html">Home Page</a>
   <br>
   <p>Cell Phone: 514-531-7452
     <br>Email:williamlafleur80@gmail.com or williamlafleur@hotmail.ca
     <br>Student Email: wlafleur07@sl.on.ca</p>
-  <hr>
+  <hr <form>
+  <p id="textblock"></p>
+  <label>Cities:</label><br>
+  <select>
+    <option value="0">Select Following</option>
+    <option value="1" selected>Ottawa</option>
+    <option value="2">Toronto</option>
+    <option value="3">Kingston</option>
+    <option value="4">Vancouver</option>
+    <option value="5">Montreal</option>
+  </select><br><br>
 
-  <form>
-    <label>Cities:</label><br>
-    <select>
-      <option value="0">Select Following</option>
-      <option value="1" selected>Ottawa</option>
-      <option value="2">Toronto</option>
-      <option value="3">Kingston</option>
-      <option value="4">Vancouver</option>
-      <option value="5">Montreal</option>
-    </select><br><br>
+  <label>Choose your colour!:</label><br>
+  <input type="radio" name="color" value="red" checked>Red <br>
+  <input type="radio" name="color" value="green">Green <br>
+  <input type="radio" name="color" value="blue">Blue<br><br>
 
-    <label>Choose your colour!:</label><br>
-    <input type="radio" name="color" value="red" checked>Red <br>
-    <input type="radio" name="color" value="green">Green <br>
-    <input type="radio" name="color" value="blue">Blue<br><br>
+  <label>Task List:</label><br>
+  <input type="checkbox" name="taskList1" value="0">Homework <br>
+  <input type="checkbox" name="taskList2" value="1">Study <br>
+  <input type="checkbox" name="taskList3" value="2" checked>Panic <br>
+  <input type="checkbox" name="taskList4" value="3">Chores <br><br>
 
-    <label>Task List:</label><br>
-    <input type="checkbox" name="taskList1" value="0">Homework <br>
-    <input type="checkbox" name="taskList2" value="1">Study <br>
-    <input type="checkbox" name="taskList3" value="2" checked>Panic <br>
-    <input type="checkbox" name="taskList4" value="3">Chores <br><br>
+  <label>Date:</label>
+  <input type="date" name="theDate" value=""><br>
+  <input type="submit" name="" value="Press me!"><br><br>
 
-    <label>Date:</label>
-    <input type="date" name="theDate" value=""><br>
-    <input type="submit" name="" value="Press me!"><br><br>
-
-    <label>Username:</label>
-    <input type="text" name="yourUsername" value="" size="1" maxlength="20"><br>
-    <label>Password:</label>
-    <input type="password" name="yourPassword" value=""><br>
-    <input type="submit" name="">
-    <br><br>
+  <label>Username:</label>
+  <input type="text" name="yourUsername" value="" size="1" maxlength="20"><br>
+  <label>Password:</label>
+  <input type="password" name="yourPassword" value=""><br>
+  <input type="submit" name="">
+  <br><br>
   </form>
 
   <form name="emailForm" action="mailto:williamlafleur80@gmail.com" method="post" enctype="text/plain">
@@ -61,6 +77,38 @@
     <input type="submit" name="" value="Press me too!">
   </form>
 
+  <p id="button">
+    <button onclick="myMove()">Don't Press</button>
+  </p>
+
+  <div id="myContainer">
+    <div id="myAnimation">
+      <img id="Kratos" src="Images/Kratos.jpg" alt="">
+      <script>
+        function myMove() {
+          var elem = document.getElementById("myAnimation");
+          var pos = 0;
+          var id = setInterval(frame, 10);
+
+          function frame() {
+            if (pos == 350) {
+              clearInterval(id);
+            } else {
+              pos++;
+              elem.style.top = pos + 'px';
+              elem.style.left = pos + 'px';
+            }
+          }
+        }
+      </script>
+    </div>
+
+  </div>
+
 </body>
 
 </html>
+<script>
+  document.title = "William";
+  document.getElementById("textblock").innerHTML = Date();
+</script>
